@@ -103,6 +103,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void openQuery() {
+        Intent i = new Intent(MainActivity.this,ImageQueryActivity.class);
+        startActivity(i);
     }
 
     private void openCamera() {
