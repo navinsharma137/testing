@@ -10,6 +10,7 @@ import com.example.myapplication.databinding.ActivityMainBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.FileProvider;
@@ -143,4 +144,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return imageFile;
     }
 
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        Intent intent = new Intent(this,DisplayViewActivity.class);
+//        startActivity(intent);
+//    }
 }

@@ -31,16 +31,23 @@ public class ImageQueryActivity extends AppCompatActivity {
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(ImageQueryActivity.this, ""+parent.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         subBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                spinner.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Toast.makeText(ImageQueryActivity.this, ""+parent.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
-                    }
-                });
             }
         });
     }

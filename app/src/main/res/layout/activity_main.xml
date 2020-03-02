@@ -16,7 +16,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/camera_fab_button"
+            android:id="@+id/query_fab_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
@@ -24,7 +24,7 @@
             app:srcCompat="@android:drawable/ic_dialog_email" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/query_fab_button"
+            android:id="@+id/camera_fab_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
